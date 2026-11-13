@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Aymerick A.</title>
+  <meta name="description" content="Sélection de projets et réalisations.">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <span class="brand"><span class="brand-nom"><span class="brand-name">Aymerick ARMAND</span></span><a class="brand-mail" href="mailto:aymerick.armand@gmail.com">aymerick.armand@gmail.com</a><span class="brand-stage">Stage du 11 janvier au 2 avril 2027</span></span>
+    <nav class="nav">
+      <a href="index.html">Profil</a>
+      <a href="cv.html">CV</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+    </nav>
+    <div class="header-right">
+      <button class="theme-toggle" aria-label="Passer en mode sombre"><img class="moon" src="assets/logos/lune.png" alt="Mode sombre"><img class="sun" src="assets/logos/soleil.png" alt="Mode clair"></button>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="pdf-full">
+  <div class="pdf-sheet">
+    <!-- Mets ton fichier ici : site-web/assets/portfolio.pdf -->
+    <div id="pdf-viewer" data-pdf="assets/portfolio.pdf?v=5">
+      <div class="pdf-loader">
+        <p><strong>Chargement</strong> (cela ne prend qu'un instant).</p>
+        <p class="pdf-sub">N'hésitez pas à prendre un bon café pendant ce temps, promis le portfolio va s'afficher.</p>
+        <div class="pdf-spinner"></div>
+        <p class="pdf-count"></p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>2026 — Aymerick A.</p>
+    <p><a href="index.html">Profil</a> · <a href="cv.html">CV</a> · <a href="portfolio.html">Portfolio</a></p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="js/pdf-viewer.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
